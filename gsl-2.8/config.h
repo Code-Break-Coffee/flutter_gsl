@@ -83,7 +83,7 @@
 #define HAVE_EXTENDED_PRECISION_REGISTERS 1
 
 /* Define if x86 processor has sse extensions. */
-#define HAVE_FPU_X86_SSE 1
+/* #undef HAVE_FPU_X86_SSE */
 
 /* Define to 1 if you have the <ieeefp.h> header file. */
 /* #undef HAVE_IEEEFP_H */
@@ -215,7 +215,7 @@
 /* #undef HAVE_GNUSPARC_IEEE_INTERFACE */
 /* #undef HAVE_GNUM68K_IEEE_INTERFACE */
 /* #undef HAVE_GNUPPC_IEEE_INTERFACE */
-#define HAVE_GNUX86_IEEE_INTERFACE 1
+/* #undef HAVE_GNUX86_IEEE_INTERFACE */
 /* #undef HAVE_SUNOS4_IEEE_INTERFACE */
 /* #undef HAVE_SOLARIS_IEEE_INTERFACE */
 /* #undef HAVE_HPUX11_IEEE_INTERFACE */
