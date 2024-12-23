@@ -24,9 +24,9 @@ project(flutter_gsl)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Specify the paths to the locally installed GSL library and include directories
-set(GSL_INCLUDE_DIR /home/darth-kartikey/StudioProjects/flutter_gsl/gsl-2.8/build/include)
-set(GSL_LIBRARIES /home/darth-kartikey/StudioProjects/flutter_gsl/gsl-2.8/build/lib/libgsl.so /home/darth-kartikey/StudioProjects/flutter_gsl/gsl-2.8/build/lib/libgslcblas.so)
+# Specify the paths to the locally installed GSL library and include directories for each architecture
+set(GSL_INCLUDE_DIR /home/darth-kartikey/StudioProjects/flutter_gsl/gsl/${ANDROID_ABI}/include)
+set(GSL_LIBRARIES /home/darth-kartikey/StudioProjects/flutter_gsl/gsl/${ANDROID_ABI}/lib/libgsl.so /home/darth-kartikey/StudioProjects/flutter_gsl/gsl/${ANDROID_ABI}/lib/libgslcblas.so)
 
 # Add the source files
 add_library(flutter_gsl SHARED "flutter_gsl.c")
