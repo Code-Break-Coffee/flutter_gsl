@@ -27,7 +27,7 @@
 #include <gsl/gsl_sf_lambert.h>
 #include <gsl/gsl_sf_synchrotron.h>
 #include <gsl/gsl_sf_trig.h>
-#include <gsl/gsl_sf_zetafunc.h>
+//#include <gsl/gsl_sf_zetafunc.h>
 
 // Bessel functions
 double gsl_bessel_j0(double x);
