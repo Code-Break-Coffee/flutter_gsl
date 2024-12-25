@@ -33,4 +33,46 @@ class flutter_gsl {
           'gsl_bessel_j0');
   late final _gsl_bessel_j0 =
       _gsl_bessel_j0Ptr.asFunction<double Function(double)>();
+
+  double gsl_bessel_j1(
+    double x,
+  ) {
+    return _gsl_bessel_j1(
+      x,
+    );
+  }
+
+  late final _gsl_bessel_j1Ptr =
+      _lookup<ffi.NativeFunction<ffi.Double Function(ffi.Double)>>(
+          'gsl_bessel_j1');
+  late final _gsl_bessel_j1 =
+      _gsl_bessel_j1Ptr.asFunction<double Function(double)>();
+
+  double gsl_bessel_y0(
+    double x,
+  ) {
+    return _gsl_bessel_y0(
+      x,
+    );
+  }
+
+  late final _gsl_bessel_y0Ptr =
+      _lookup<ffi.NativeFunction<ffi.Double Function(ffi.Double)>>(
+          'gsl_bessel_y0');
+  late final _gsl_bessel_y0 =
+      _gsl_bessel_y0Ptr.asFunction<double Function(double)>();
+
+  double gsl_bessel_y1(
+    double x,
+  ) {
+    return _gsl_bessel_y1(
+      x,
+    );
+  }
+
+  late final _gsl_bessel_y1Ptr =
+      _lookup<ffi.NativeFunction<ffi.Double Function(ffi.Double)>>(
+          'gsl_bessel_y1');
+  late final _gsl_bessel_y1 =
+      _gsl_bessel_y1Ptr.asFunction<double Function(double)>();
 }

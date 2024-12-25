@@ -15,14 +15,14 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  late int sumResult;
-  late Future<int> sumAsyncResult;
+  late double sumResult;
+  // late double sumAsyncResult;
 
   @override
   void initState() {
     super.initState();
-    sumResult = flutter_gsl.gslBesselJ0(5.0) as int;
-    sumAsyncResult = flutter_gsl.gslBesselJ0(10.0) as Future<int>;
+    sumResult = flutter_gsl.gslBesselJ0(5.0);
+    // sumAsyncResult = flutter_gsl.gslBesselJ0(10.0);
   }
 
 
@@ -53,18 +53,6 @@ class _MyAppState extends State<MyApp> {
                   textAlign: TextAlign.center,
                 ),
                 spacerSmall,
-                FutureBuilder<int>(
-                  future: sumAsyncResult,
-                  builder: (BuildContext context, AsyncSnapshot<int> value) {
-                    final displayValue =
-                        (value.hasData) ? value.data : 'loading';
-                    return Text(
-                      'await sumAsync(3, 4) = $displayValue',
-                      style: textStyle,
-                      textAlign: TextAlign.center,
-                    );
-                  },
-                ),
               ],
             ),
           ),
