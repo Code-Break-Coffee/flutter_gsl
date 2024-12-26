@@ -41,3 +41,8 @@ double gsl_bessel_y0(double x) {
 double gsl_bessel_y1(double x) {
     return gsl_sf_bessel_Y1(x);
 }
+
+
+double gsl_bessel_sin(double x){
+    return gsl_sf_sin(x);
+}

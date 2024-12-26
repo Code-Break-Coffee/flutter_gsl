@@ -75,4 +75,17 @@ class flutter_gsl {
           'gsl_bessel_y1');
   late final _gsl_bessel_y1 =
       _gsl_bessel_y1Ptr.asFunction<double Function(double)>();
+
+  double gsl_sf_sin(
+    double x,
+  ) {
+    return _gsl_sf_sin(
+      x,
+    );
+  }
+
+  late final _gsl_sf_sinPtr =
+      _lookup<ffi.NativeFunction<ffi.Double Function(ffi.Double)>>(
+          'gsl_sf_sin');
+  late final _gsl_sf_sin = _gsl_sf_sinPtr.asFunction<double Function(double)>();
 }

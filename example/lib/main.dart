@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    sumResult = flutter_gsl.gslBesselJ0(5.0);
+    sumResult = flutter_gsl.gslSin(4.0);
     // sumAsyncResult = flutter_gsl.gslBesselJ0(10.0);
   }
 
@@ -48,7 +48,7 @@ class _MyAppState extends State<MyApp> {
                 ),
                 spacerSmall,
                 Text(
-                  'sum(1, 2) = $sumResult',
+                  'sum(4) = $sumResult',
                   style: textStyle,
                   textAlign: TextAlign.center,
                 ),
