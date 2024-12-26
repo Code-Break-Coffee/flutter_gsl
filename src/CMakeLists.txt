@@ -18,16 +18,23 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Define the project name
-project(flutter_gsl)
+project(flutter_gsl VERSION 0.0.1 LANGUAGES C)
 
 # Set the C++ standard
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Specify the paths to the locally installed GSL library and include directories for each architecture
-set(GSL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/../gsl/${ANDROID_ABI}/include)
-set(GSL_LIBRARIES ${CMAKE_SOURCE_DIR}/../gsl/${ANDROID_ABI}/lib/libgsl.so ${CMAKE_SOURCE_DIR}/../gsl/${ANDROID_ABI}/lib/libgslcblas.so)
-
+# Specify the paths to the locally installed GSL library and include directories for each platform
+if (ANDROID)
+    set(GSL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/../gsl/${ANDROID_ABI}/include)
+    set(GSL_LIBRARIES ${CMAKE_SOURCE_DIR}/../gsl/${ANDROID_ABI}/lib/libgsl.so ${CMAKE_SOURCE_DIR}/../gsl/${ANDROID_ABI}/lib/libgslcblas.so)
+elseif (WIN32)
+    set(GSL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/../gsl/windows/include)
+    set(GSL_LIBRARIES ${CMAKE_SOURCE_DIR}/../gsl/windows/lib/gsl.lib ${CMAKE_SOURCE_DIR}/../gsl/windows/lib/gslcblas.lib)
+elseif (UNIX)
+    set(GSL_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../gsl/x86_64/include)
+    set(GSL_LIBRARIES ${CMAKE_CURRENT_SOURCE_DIR}/../gsl/x86_64/lib/libgsl.so ${CMAKE_CURRENT_SOURCE_DIR}/../gsl/x86_64/lib/libgslcblas.so)
+endif()
 # Add the GSL include directory
 #include_directories(${CMAKE_SOURCE_DIR}/gsl/${CMAKE_ANDROID_ARCH_ABI}/include)
 
