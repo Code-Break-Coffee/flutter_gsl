@@ -1,0 +1,11 @@
+prefix=/home/darth-kartikey/StudioProjects/flutter_gsl/gsl/arm64-v8a
+exec_prefix=/home/darth-kartikey/StudioProjects/flutter_gsl/gsl/arm64-v8a
+libdir=/home/darth-kartikey/StudioProjects/flutter_gsl/gsl/arm64-v8a/lib
+includedir=/home/darth-kartikey/StudioProjects/flutter_gsl/gsl/arm64-v8a/include
+GSL_CBLAS_LIB=-lgslcblas
+
+Name: GSL
+Description: GNU Scientific Library
+Version: 2.8
+Libs: -L/home/darth-kartikey/StudioProjects/flutter_gsl/gsl/arm64-v8a/lib -lgsl ${GSL_CBLAS_LIB} -lm -lm 
+Cflags: -I/home/darth-kartikey/StudioProjects/flutter_gsl/gsl/arm64-v8a/include
