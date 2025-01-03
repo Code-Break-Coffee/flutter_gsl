@@ -92,10 +92,6 @@ double gsl_sf_legendre_Plm_deriv_e(double l, double m, double x);
 double gsl_sf_legendre_sphPlm_e(double l, double m, double x);
 double gsl_sf_legendre_sphPlm_deriv_e(double l, double m, double x);
 
-// Spherical harmonics
-double gsl_sf_legendre_sphPlm_array(int lmax, double x, double *result);
-double gsl_sf_legendre_sphPlm_deriv_array(int lmax, double x, double *result);
-
 // Bessel functions of integer order
 double gsl_sf_bessel_Jn(int n, double x);
 double gsl_sf_bessel_Yn(int n, double x);
@@ -107,12 +103,6 @@ double gsl_sf_legendre_Plm_e_array(int lmax, double x, double *result);
 double gsl_sf_legendre_Plm_deriv_e_array(int lmax, double x, double *result);
 double gsl_sf_legendre_sphPlm_e_array(int lmax, double x, double *result);
 double gsl_sf_legendre_sphPlm_deriv_e_array(int lmax, double x, double *result);
-
-// Legendre functions of integer order with array versions
-double gsl_sf_legendre_Plm_array(int lmax, double x, double *result);
-double gsl_sf_legendre_Plm_deriv_array(int lmax, double x, double *result);
-double gsl_sf_legendre_sphPlm_array(int lmax, double x, double *result);
-double gsl_sf_legendre_sphPlm_deriv_array(int lmax, double x, double *result);
 
 // Bessel functions of complex order
 double gsl_sf_bessel_Jnu(double nu, double x);
@@ -152,33 +142,11 @@ double gsl_sf_bessel_Ynu_e_array(int nmax, double nu, double x, double *result);
 double gsl_sf_bessel_Inu_e_array(int nmax, double nu, double x, double *result);
 double gsl_sf_bessel_Knu_e_array(int nmax, double nu, double x, double *result);
 
-// Legendre functions of complex order with error handling and array versions
-double gsl_sf_legendre_Plm_e_array(int lmax, double x, double *result);
-double gsl_sf_legendre_Plm_deriv_e_array(int lmax, double x, double *result);
-double gsl_sf_legendre_sphPlm_e_array(int lmax, double x, double *result);
-double gsl_sf_legendre_sphPlm_deriv_e_array(int lmax, double x, double *result);
-
 // Legendre functions of complex order with array versions
 double gsl_sf_legendre_Plm_array(int lmax, double x, double *result);
 double gsl_sf_legendre_Plm_deriv_array(int lmax, double x, double *result);
 double gsl_sf_legendre_sphPlm_array(int lmax, double x, double *result);
 double gsl_sf_legendre_sphPlm_deriv_array(int lmax, double x, double *result);
-
-// Special functions
-double gsl_sf_airy_Ai(double x);
-double gsl_sf_airy_Bi(double x);
-double gsl_sf_airy_Ai_scaled(double x);
-double gsl_sf_airy_Bi_scaled(double x);
-double gsl_sf_airy_Ai_deriv(double x);
-double gsl_sf_airy_Bi_deriv(double x);
-double gsl_sf_airy_Ai_deriv_scaled(double x);
-double gsl_sf_airy_Bi_deriv_scaled(double x);
-double gsl_sf_airy_zero_Ai(unsigned int n);
-double gsl_sf_airy_zero_Bi(unsigned int n);
-double gsl_sf_airy_zero_Ai_deriv(unsigned int n);
-double gsl_sf_airy_zero_Bi_deriv(unsigned int n);
-double gsl_sf_airy_zero_Ai_deriv_scaled(unsigned int n);
-double gsl_sf_airy_zero_Bi_deriv_scaled(unsigned int n);
 
 // Error handling
 double gsl_error_handler(const char *reason, const char *file, int line, int gsl_errno);
@@ -211,7 +179,6 @@ extern const double GSL_CONST_LOG_PI;
 extern const double GSL_CONST_LOG_2_PI;
 extern const double GSL_CONST_LOG_PI_2;
 extern const double GSL_CONST_LOG_E;
-extern const double GSL_CONST_LOG_10_INV;
 extern const double GSL_CONST_LOG_2_INV;
 extern const double GSL_CONST_LOG_PI_INV;
 extern const double GSL_CONST_LOG_2_PI_INV;
@@ -226,16 +193,8 @@ extern const double GSL_CONST_LOG_PI_10;
 extern const double GSL_CONST_LOG_10_PI;
 extern const double GSL_CONST_LOG_PI_E;
 extern const double GSL_CONST_LOG_E_PI;
-extern const double GSL_CONST_LOG_2_PI_10;
 extern const double GSL_CONST_LOG_10_PI_2;
-extern const double GSL_CONST_LOG_2_PI_E;
-extern const double GSL_CONST_LOG_E_2_PI;
-extern const double GSL_CONST_LOG_PI_2_10;
-extern const double GSL_CONST_LOG_10_2_PI;
-extern const double GSL_CONST_LOG_PI_E_2;
-extern const double GSL_CONST_LOG_E_PI_2;
-extern const double GSL_CONST_LOG_2_PI_E_INV;
-extern const double GSL_CONST_LOG_E_2_PI_INV;
+extern const double GSL_CONST_LOG_10_E_2;
 extern const double GSL_CONST_LOG_PI_2_10_INV;
 extern const double GSL_CONST_LOG_10_2_PI_INV;
 extern const double GSL_CONST_LOG_PI_E_2_INV;
@@ -245,97 +204,14 @@ extern const double GSL_CONST_LOG_10_PI_2_INV;
 extern const double GSL_CONST_LOG_2_PI_E_INV;
 extern const double GSL_CONST_LOG_E_2_PI_INV;
 extern const double GSL_CONST_LOG_PI_2_E;
-extern const double GSL_CONST_LOG_E_PI_2;
 extern const double GSL_CONST_LOG_2_PI_10;
-extern const double GSL_CONST_LOG_10_2_PI;
-extern const double GSL_CONST_LOG_PI_E_2;
-extern const double GSL_CONST_LOG_E_PI_2;
 extern const double GSL_CONST_LOG_2_PI_E;
 extern const double GSL_CONST_LOG_E_2_PI;
 extern const double GSL_CONST_LOG_PI_2_10;
 extern const double GSL_CONST_LOG_10_2_PI;
 extern const double GSL_CONST_LOG_PI_E_2;
 extern const double GSL_CONST_LOG_E_PI_2;
-extern const double GSL_CONST_LOG_2_PI_E_INV;
-extern const double GSL_CONST_LOG_E_2_PI_INV;
-extern const double GSL_CONST_LOG_PI_2_10_INV;
-extern const double GSL_CONST_LOG_10_2_PI_INV;
-extern const double GSL_CONST_LOG_PI_E_2_INV;
-extern const double GSL_CONST_LOG_E_PI_2_INV;
-extern const double GSL_CONST_LOG_2_PI_10_INV;
-extern const double GSL_CONST_LOG_10_PI_2_INV;
-extern const double GSL_CONST_LOG_2_PI_E_INV;
-extern const double GSL_CONST_LOG_E_2_PI_INV;
-extern const double GSL_CONST_LOG_PI_2_E;
-extern const double GSL_CONST_LOG_E_PI_2;
-extern const double GSL_CONST_LOG_2_PI_10;
-extern const double GSL_CONST_LOG_10_2_PI;
-extern const double GSL_CONST_LOG_PI_E_2;
-extern const double GSL_CONST_LOG_E_PI_2;
-extern const double GSL_CONST_LOG_2_PI_E;
-extern const double GSL_CONST_LOG_E_2_PI;
-extern const double GSL_CONST_LOG_PI_2_10;
-extern const double GSL_CONST_LOG_10_2_PI;
-extern const double GSL_CONST_LOG_PI_E_2;
-extern const double GSL_CONST_LOG_E_PI_2;
-extern const double GSL_CONST_LOG_2_PI_E_INV;
-extern const double GSL_CONST_LOG_E_2_PI_INV;
-extern const double GSL_CONST_LOG_PI_2_10_INV;
-extern const double GSL_CONST_LOG_10_2_PI_INV;
-extern const double GSL_CONST_LOG_PI_E_2_INV;
-extern const double GSL_CONST_LOG_E_PI_2_INV;
-extern const double GSL_CONST_LOG_2_PI_10_INV;
-extern const double GSL_CONST_LOG_10_PI_2_INV;
-extern const double GSL_CONST_LOG_2_PI_E_INV;
-extern const double GSL_CONST_LOG_E_2_PI_INV;
-extern const double GSL_CONST_LOG_PI_2_E;
-extern const double GSL_CONST_LOG_E_PI_2;
-extern const double GSL_CONST_LOG_2_PI_10;
-extern const double GSL_CONST_LOG_10_2_PI;
-extern const double GSL_CONST_LOG_PI_E_2;
-extern const double GSL_CONST_LOG_E_PI_2;
-extern const double GSL_CONST_LOG_2_PI_E;
-extern const double GSL_CONST_LOG_E_2_PI;
-extern const double GSL_CONST_LOG_PI_2_10;
-extern const double GSL_CONST_LOG_10_2_PI;
-extern const double GSL_CONST_LOG_PI_E_2;
-extern const double GSL_CONST_LOG_E_PI_2;
-extern const double GSL_CONST_LOG_2_PI_E_INV;
-extern const double GSL_CONST_LOG_E_2_PI_INV;
-extern const double GSL_CONST_LOG_PI_2_10_INV;
-extern const double GSL_CONST_LOG_10_2_PI_INV;
-extern const double GSL_CONST_LOG_PI_E_2_INV;
-extern const double GSL_CONST_LOG_E_PI_2_INV;
-extern const double GSL_CONST_LOG_2_PI_10_INV;
-extern const double GSL_CONST_LOG_10_PI_2_INV;
-extern const double GSL_CONST_LOG_2_PI_E_INV;
-extern const double GSL_CONST_LOG_E_2_PI_INV;
-extern const double GSL_CONST_LOG_PI_2_E;
-extern const double GSL_CONST_LOG_E_PI_2;
-extern const double GSL_CONST_LOG_2_PI_10;
-extern const double GSL_CONST_LOG_10_2_PI;
-extern const double GSL_CONST_LOG_PI_E_2;
-extern const double GSL_CONST_LOG_E_PI_2;
-extern const double GSL_CONST_LOG_2_PI_E;
-extern const double GSL_CONST_LOG_E_2_PI;
-extern const double GSL_CONST_LOG_PI_2_10;
-extern const double GSL_CONST_LOG_10_2_PI;
-extern const double GSL_CONST_LOG_PI_E_2;
-extern const double GSL_CONST_LOG_E_PI_2;
-extern const double GSL_CONST_LOG_2_PI_E_INV;
-extern const double GSL_CONST_LOG_E_2_PI_INV;
-extern const double GSL_CONST_LOG_PI_2_10_INV;
-extern const double GSL_CONST_LOG_10_2_PI_INV;
-extern const double GSL_CONST_LOG_PI_E_2_INV;
-extern const double GSL_CONST_LOG_E_PI_2_INV;
-extern const double GSL_CONST_LOG_2_PI_10_INV;
-extern const double GSL_CONST_LOG_10_PI_2_INV;
-extern const double GSL_CONST_LOG_2_PI_E_INV;
-extern const double GSL_CONST_LOG_E_2_PI_INV;
-extern const double GSL_CONST_LOG_PI_2_E;
-extern const double GSL_CONST_LOG_E_PI_2;
-extern const double GSL_CONST_LOG_2_PI_10;
-extern const double GSL_CONST_LOG_10_2_PI;
+
 
 // Physical constants
 extern const double GSL_CONST_BOLTZMANN;
