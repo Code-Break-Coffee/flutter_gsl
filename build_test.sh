@@ -13,7 +13,7 @@ GSL_SOURCE_DIR="$BUILD_DIR/gsl-$GSL_VERSION"
 # Define Android architectures
 declare -A ARCH_MAP
 ARCH_MAP=(
-#    ["arm64-v8a"]="aarch64"
+    ["arm64-v8a"]="aarch64"
     ["armeabi-v7a"]="armv7a"
 #    ["x86"]="i686"
 #    ["x86_64"]="x86_64"
