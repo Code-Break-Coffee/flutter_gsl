@@ -295,12 +295,6 @@ double gsl_set_error_handler_off();
 double gsl_set_error_handler_on();
 double gsl_set_error_handler(double (*handler)(const char *reason, const char *file, int line, int gsl_errno));
 
-// Memory allocation
-double gsl_set_memory_handler_off();
-double gsl_set_memory_handler_on();
-double gsl_set_memory_handler(void *(*alloc)(size_t n), void (*free)(void *p));
-
-#endif // GSL_CONFIG_H
 
 
 #endif // FLUTTER_GSL_H

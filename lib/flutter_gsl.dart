@@ -32,3 +32,5 @@ final flutter_gsl _bindings = flutter_gsl(_dylib);
 double gslBesselJ0(double x) => _bindings.gsl_bessel_j0(x);
 
 double gslSin(double x) => _bindings.gsl_sf_sin(x);
+
+double g() => _bindings.GSL_CONST_MKSA_BOHR_MAGNETON;
