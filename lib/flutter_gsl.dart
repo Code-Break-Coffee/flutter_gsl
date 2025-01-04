@@ -35,3 +35,4 @@ double gslSin(double x) => _bindings.gsl_sf_sin(x);
 
 double g() => _bindings.GSL_CONST_MKSA_BOHR_MAGNETON;
 
+
