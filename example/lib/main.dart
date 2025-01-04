@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    sumResult = flutter_gsl.gslSin(4.0);
+    sumResult = flutter_gsl.g();
     // sumAsyncResult = flutter_gsl.gslBesselJ0(10.0);
   }
 
