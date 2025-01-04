@@ -49,9 +49,7 @@ build_arch() {
 }
 
 # Build for each architecture
-#build_arch "aarch64" "arm64-v8a"
-#build_arch "armv7a" "armeabi-v7a"
-#build_arch "i686" "x86"
-#build_arch "x86_64" "x86_64"
+build_arch "aarch64" "arm64-v8a"
+build_arch "armv7a" "armeabi-v7a"
 
 echo "GSL built successfully for all architectures"
