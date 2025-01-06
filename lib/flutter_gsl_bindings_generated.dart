@@ -20,6 +20,97 @@ class flutter_gsl {
           lookup)
       : _lookup = lookup;
 
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_FINE_STRUCTURE =
+      _lookup<ffi.Double>('GSL_CONST_NUM_FINE_STRUCTURE');
+
+  double get GSL_CONST_NUM_FINE_STRUCTURE =>
+      _GSL_CONST_NUM_FINE_STRUCTURE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_AVOGADRO =
+      _lookup<ffi.Double>('GSL_CONST_NUM_AVOGADRO');
+
+  double get GSL_CONST_NUM_AVOGADRO => _GSL_CONST_NUM_AVOGADRO.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_YOTTA =
+      _lookup<ffi.Double>('GSL_CONST_NUM_YOTTA');
+
+  double get GSL_CONST_NUM_YOTTA => _GSL_CONST_NUM_YOTTA.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_ZETTA =
+      _lookup<ffi.Double>('GSL_CONST_NUM_ZETTA');
+
+  double get GSL_CONST_NUM_ZETTA => _GSL_CONST_NUM_ZETTA.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_EXA =
+      _lookup<ffi.Double>('GSL_CONST_NUM_EXA');
+
+  double get GSL_CONST_NUM_EXA => _GSL_CONST_NUM_EXA.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_PETA =
+      _lookup<ffi.Double>('GSL_CONST_NUM_PETA');
+
+  double get GSL_CONST_NUM_PETA => _GSL_CONST_NUM_PETA.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_TERA =
+      _lookup<ffi.Double>('GSL_CONST_NUM_TERA');
+
+  double get GSL_CONST_NUM_TERA => _GSL_CONST_NUM_TERA.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_GIGA =
+      _lookup<ffi.Double>('GSL_CONST_NUM_GIGA');
+
+  double get GSL_CONST_NUM_GIGA => _GSL_CONST_NUM_GIGA.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_MEGA =
+      _lookup<ffi.Double>('GSL_CONST_NUM_MEGA');
+
+  double get GSL_CONST_NUM_MEGA => _GSL_CONST_NUM_MEGA.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_KILO =
+      _lookup<ffi.Double>('GSL_CONST_NUM_KILO');
+
+  double get GSL_CONST_NUM_KILO => _GSL_CONST_NUM_KILO.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_MILLI =
+      _lookup<ffi.Double>('GSL_CONST_NUM_MILLI');
+
+  double get GSL_CONST_NUM_MILLI => _GSL_CONST_NUM_MILLI.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_MICRO =
+      _lookup<ffi.Double>('GSL_CONST_NUM_MICRO');
+
+  double get GSL_CONST_NUM_MICRO => _GSL_CONST_NUM_MICRO.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_NANO =
+      _lookup<ffi.Double>('GSL_CONST_NUM_NANO');
+
+  double get GSL_CONST_NUM_NANO => _GSL_CONST_NUM_NANO.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_PICO =
+      _lookup<ffi.Double>('GSL_CONST_NUM_PICO');
+
+  double get GSL_CONST_NUM_PICO => _GSL_CONST_NUM_PICO.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_FEMTO =
+      _lookup<ffi.Double>('GSL_CONST_NUM_FEMTO');
+
+  double get GSL_CONST_NUM_FEMTO => _GSL_CONST_NUM_FEMTO.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_ATTO =
+      _lookup<ffi.Double>('GSL_CONST_NUM_ATTO');
+
+  double get GSL_CONST_NUM_ATTO => _GSL_CONST_NUM_ATTO.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_ZEPTO =
+      _lookup<ffi.Double>('GSL_CONST_NUM_ZEPTO');
+
+  double get GSL_CONST_NUM_ZEPTO => _GSL_CONST_NUM_ZEPTO.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_YOCTO =
+      _lookup<ffi.Double>('GSL_CONST_NUM_YOCTO');
+
+  double get GSL_CONST_NUM_YOCTO => _GSL_CONST_NUM_YOCTO.value;
+
   late final ffi.Pointer<ffi.Double> _GSL_CONST_MKSA_SPEED_OF_LIGHT =
       _lookup<ffi.Double>('GSL_CONST_MKSA_SPEED_OF_LIGHT');
 
@@ -60,17 +151,6 @@ class flutter_gsl {
 
   double get GSL_CONST_MKSA_THOMSON_CROSS_SECTION =>
       _GSL_CONST_MKSA_THOMSON_CROSS_SECTION.value;
-
-  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_AVOGADRO =
-      _lookup<ffi.Double>('GSL_CONST_NUM_AVOGADRO');
-
-  double get GSL_CONST_NUM_AVOGADRO => _GSL_CONST_NUM_AVOGADRO.value;
-
-  late final ffi.Pointer<ffi.Double> _GSL_CONST_NUM_FINE_STRUCTURE =
-      _lookup<ffi.Double>('GSL_CONST_NUM_FINE_STRUCTURE');
-
-  double get GSL_CONST_NUM_FINE_STRUCTURE =>
-      _GSL_CONST_NUM_FINE_STRUCTURE.value;
 
   late final ffi.Pointer<ffi.Double> _GSL_CONST_MKSA_ACRE =
       _lookup<ffi.Double>('GSL_CONST_MKSA_ACRE');
@@ -542,6 +622,516 @@ class flutter_gsl {
       _lookup<ffi.Double>('GSL_CONST_MKSA_YARD');
 
   double get GSL_CONST_MKSA_YARD => _GSL_CONST_MKSA_YARD.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_SPEED_OF_LIGHT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_SPEED_OF_LIGHT');
+
+  double get GSL_CONST_CGSM_SPEED_OF_LIGHT =>
+      _GSL_CONST_CGSM_SPEED_OF_LIGHT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_GRAVITATIONAL_CONSTANT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_GRAVITATIONAL_CONSTANT');
+
+  double get GSL_CONST_CGSM_GRAVITATIONAL_CONSTANT =>
+      _GSL_CONST_CGSM_GRAVITATIONAL_CONSTANT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_PLANCKS_CONSTANT_H =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_PLANCKS_CONSTANT_H');
+
+  double get GSL_CONST_CGSM_PLANCKS_CONSTANT_H =>
+      _GSL_CONST_CGSM_PLANCKS_CONSTANT_H.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_PLANCKS_CONSTANT_HBAR =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_PLANCKS_CONSTANT_HBAR');
+
+  double get GSL_CONST_CGSM_PLANCKS_CONSTANT_HBAR =>
+      _GSL_CONST_CGSM_PLANCKS_CONSTANT_HBAR.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_BOLTZMANN =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_BOLTZMANN');
+
+  double get GSL_CONST_CGSM_BOLTZMANN => _GSL_CONST_CGSM_BOLTZMANN.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_STEFAN_BOLTZMANN_CONSTANT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_STEFAN_BOLTZMANN_CONSTANT');
+
+  double get GSL_CONST_CGSM_STEFAN_BOLTZMANN_CONSTANT =>
+      _GSL_CONST_CGSM_STEFAN_BOLTZMANN_CONSTANT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_THOMSON_CROSS_SECTION =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_THOMSON_CROSS_SECTION');
+
+  double get GSL_CONST_CGSM_THOMSON_CROSS_SECTION =>
+      _GSL_CONST_CGSM_THOMSON_CROSS_SECTION.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_ASTRONOMICAL_UNIT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_ASTRONOMICAL_UNIT');
+
+  double get GSL_CONST_CGSM_ASTRONOMICAL_UNIT =>
+      _GSL_CONST_CGSM_ASTRONOMICAL_UNIT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_LIGHT_YEAR =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_LIGHT_YEAR');
+
+  double get GSL_CONST_CGSM_LIGHT_YEAR => _GSL_CONST_CGSM_LIGHT_YEAR.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_PARSEC =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_PARSEC');
+
+  double get GSL_CONST_CGSM_PARSEC => _GSL_CONST_CGSM_PARSEC.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_GRAV_ACCEL =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_GRAV_ACCEL');
+
+  double get GSL_CONST_CGSM_GRAV_ACCEL => _GSL_CONST_CGSM_GRAV_ACCEL.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_ELECTRON_VOLT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_ELECTRON_VOLT');
+
+  double get GSL_CONST_CGSM_ELECTRON_VOLT =>
+      _GSL_CONST_CGSM_ELECTRON_VOLT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_MASS_ELECTRON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_MASS_ELECTRON');
+
+  double get GSL_CONST_CGSM_MASS_ELECTRON =>
+      _GSL_CONST_CGSM_MASS_ELECTRON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_MASS_MUON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_MASS_MUON');
+
+  double get GSL_CONST_CGSM_MASS_MUON => _GSL_CONST_CGSM_MASS_MUON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_MASS_PROTON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_MASS_PROTON');
+
+  double get GSL_CONST_CGSM_MASS_PROTON => _GSL_CONST_CGSM_MASS_PROTON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_MASS_NEUTRON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_MASS_NEUTRON');
+
+  double get GSL_CONST_CGSM_MASS_NEUTRON => _GSL_CONST_CGSM_MASS_NEUTRON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_RYDBERG =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_RYDBERG');
+
+  double get GSL_CONST_CGSM_RYDBERG => _GSL_CONST_CGSM_RYDBERG.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_MOLAR_GAS =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_MOLAR_GAS');
+
+  double get GSL_CONST_CGSM_MOLAR_GAS => _GSL_CONST_CGSM_MOLAR_GAS.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_STANDARD_GAS_VOLUME =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_STANDARD_GAS_VOLUME');
+
+  double get GSL_CONST_CGSM_STANDARD_GAS_VOLUME =>
+      _GSL_CONST_CGSM_STANDARD_GAS_VOLUME.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_MINUTE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_MINUTE');
+
+  double get GSL_CONST_CGSM_MINUTE => _GSL_CONST_CGSM_MINUTE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_HOUR =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_HOUR');
+
+  double get GSL_CONST_CGSM_HOUR => _GSL_CONST_CGSM_HOUR.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_DAY =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_DAY');
+
+  double get GSL_CONST_CGSM_DAY => _GSL_CONST_CGSM_DAY.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_WEEK =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_WEEK');
+
+  double get GSL_CONST_CGSM_WEEK => _GSL_CONST_CGSM_WEEK.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_INCH =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_INCH');
+
+  double get GSL_CONST_CGSM_INCH => _GSL_CONST_CGSM_INCH.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_FOOT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_FOOT');
+
+  double get GSL_CONST_CGSM_FOOT => _GSL_CONST_CGSM_FOOT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_YARD =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_YARD');
+
+  double get GSL_CONST_CGSM_YARD => _GSL_CONST_CGSM_YARD.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_MILE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_MILE');
+
+  double get GSL_CONST_CGSM_MILE => _GSL_CONST_CGSM_MILE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_NAUTICAL_MILE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_NAUTICAL_MILE');
+
+  double get GSL_CONST_CGSM_NAUTICAL_MILE =>
+      _GSL_CONST_CGSM_NAUTICAL_MILE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_FATHOM =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_FATHOM');
+
+  double get GSL_CONST_CGSM_FATHOM => _GSL_CONST_CGSM_FATHOM.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_MIL =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_MIL');
+
+  double get GSL_CONST_CGSM_MIL => _GSL_CONST_CGSM_MIL.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_POINT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_POINT');
+
+  double get GSL_CONST_CGSM_POINT => _GSL_CONST_CGSM_POINT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_TEXPOINT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_TEXPOINT');
+
+  double get GSL_CONST_CGSM_TEXPOINT => _GSL_CONST_CGSM_TEXPOINT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_MICRON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_MICRON');
+
+  double get GSL_CONST_CGSM_MICRON => _GSL_CONST_CGSM_MICRON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_ANGSTROM =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_ANGSTROM');
+
+  double get GSL_CONST_CGSM_ANGSTROM => _GSL_CONST_CGSM_ANGSTROM.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_HECTARE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_HECTARE');
+
+  double get GSL_CONST_CGSM_HECTARE => _GSL_CONST_CGSM_HECTARE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_ACRE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_ACRE');
+
+  double get GSL_CONST_CGSM_ACRE => _GSL_CONST_CGSM_ACRE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_BARN =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_BARN');
+
+  double get GSL_CONST_CGSM_BARN => _GSL_CONST_CGSM_BARN.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_LITER =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_LITER');
+
+  double get GSL_CONST_CGSM_LITER => _GSL_CONST_CGSM_LITER.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_US_GALLON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_US_GALLON');
+
+  double get GSL_CONST_CGSM_US_GALLON => _GSL_CONST_CGSM_US_GALLON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_QUART =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_QUART');
+
+  double get GSL_CONST_CGSM_QUART => _GSL_CONST_CGSM_QUART.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_PINT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_PINT');
+
+  double get GSL_CONST_CGSM_PINT => _GSL_CONST_CGSM_PINT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_CUP =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_CUP');
+
+  double get GSL_CONST_CGSM_CUP => _GSL_CONST_CGSM_CUP.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_FLUID_OUNCE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_FLUID_OUNCE');
+
+  double get GSL_CONST_CGSM_FLUID_OUNCE => _GSL_CONST_CGSM_FLUID_OUNCE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_TABLESPOON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_TABLESPOON');
+
+  double get GSL_CONST_CGSM_TABLESPOON => _GSL_CONST_CGSM_TABLESPOON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_TEASPOON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_TEASPOON');
+
+  double get GSL_CONST_CGSM_TEASPOON => _GSL_CONST_CGSM_TEASPOON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_CANADIAN_GALLON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_CANADIAN_GALLON');
+
+  double get GSL_CONST_CGSM_CANADIAN_GALLON =>
+      _GSL_CONST_CGSM_CANADIAN_GALLON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_UK_GALLON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_UK_GALLON');
+
+  double get GSL_CONST_CGSM_UK_GALLON => _GSL_CONST_CGSM_UK_GALLON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_MILES_PER_HOUR =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_MILES_PER_HOUR');
+
+  double get GSL_CONST_CGSM_MILES_PER_HOUR =>
+      _GSL_CONST_CGSM_MILES_PER_HOUR.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_KILOMETERS_PER_HOUR =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_KILOMETERS_PER_HOUR');
+
+  double get GSL_CONST_CGSM_KILOMETERS_PER_HOUR =>
+      _GSL_CONST_CGSM_KILOMETERS_PER_HOUR.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_KNOT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_KNOT');
+
+  double get GSL_CONST_CGSM_KNOT => _GSL_CONST_CGSM_KNOT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_POUND_MASS =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_POUND_MASS');
+
+  double get GSL_CONST_CGSM_POUND_MASS => _GSL_CONST_CGSM_POUND_MASS.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_OUNCE_MASS =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_OUNCE_MASS');
+
+  double get GSL_CONST_CGSM_OUNCE_MASS => _GSL_CONST_CGSM_OUNCE_MASS.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_TON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_TON');
+
+  double get GSL_CONST_CGSM_TON => _GSL_CONST_CGSM_TON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_METRIC_TON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_METRIC_TON');
+
+  double get GSL_CONST_CGSM_METRIC_TON => _GSL_CONST_CGSM_METRIC_TON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_UK_TON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_UK_TON');
+
+  double get GSL_CONST_CGSM_UK_TON => _GSL_CONST_CGSM_UK_TON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_TROY_OUNCE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_TROY_OUNCE');
+
+  double get GSL_CONST_CGSM_TROY_OUNCE => _GSL_CONST_CGSM_TROY_OUNCE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_CARAT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_CARAT');
+
+  double get GSL_CONST_CGSM_CARAT => _GSL_CONST_CGSM_CARAT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_UNIFIED_ATOMIC_MASS =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_UNIFIED_ATOMIC_MASS');
+
+  double get GSL_CONST_CGSM_UNIFIED_ATOMIC_MASS =>
+      _GSL_CONST_CGSM_UNIFIED_ATOMIC_MASS.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_GRAM_FORCE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_GRAM_FORCE');
+
+  double get GSL_CONST_CGSM_GRAM_FORCE => _GSL_CONST_CGSM_GRAM_FORCE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_POUND_FORCE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_POUND_FORCE');
+
+  double get GSL_CONST_CGSM_POUND_FORCE => _GSL_CONST_CGSM_POUND_FORCE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_KILOPOUND_FORCE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_KILOPOUND_FORCE');
+
+  double get GSL_CONST_CGSM_KILOPOUND_FORCE =>
+      _GSL_CONST_CGSM_KILOPOUND_FORCE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_POUNDAL =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_POUNDAL');
+
+  double get GSL_CONST_CGSM_POUNDAL => _GSL_CONST_CGSM_POUNDAL.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_CALORIE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_CALORIE');
+
+  double get GSL_CONST_CGSM_CALORIE => _GSL_CONST_CGSM_CALORIE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_BTU =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_BTU');
+
+  double get GSL_CONST_CGSM_BTU => _GSL_CONST_CGSM_BTU.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_THERM =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_THERM');
+
+  double get GSL_CONST_CGSM_THERM => _GSL_CONST_CGSM_THERM.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_HORSEPOWER =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_HORSEPOWER');
+
+  double get GSL_CONST_CGSM_HORSEPOWER => _GSL_CONST_CGSM_HORSEPOWER.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_BAR =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_BAR');
+
+  double get GSL_CONST_CGSM_BAR => _GSL_CONST_CGSM_BAR.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_STD_ATMOSPHERE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_STD_ATMOSPHERE');
+
+  double get GSL_CONST_CGSM_STD_ATMOSPHERE =>
+      _GSL_CONST_CGSM_STD_ATMOSPHERE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_TORR =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_TORR');
+
+  double get GSL_CONST_CGSM_TORR => _GSL_CONST_CGSM_TORR.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_METER_OF_MERCURY =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_METER_OF_MERCURY');
+
+  double get GSL_CONST_CGSM_METER_OF_MERCURY =>
+      _GSL_CONST_CGSM_METER_OF_MERCURY.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_INCH_OF_MERCURY =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_INCH_OF_MERCURY');
+
+  double get GSL_CONST_CGSM_INCH_OF_MERCURY =>
+      _GSL_CONST_CGSM_INCH_OF_MERCURY.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_INCH_OF_WATER =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_INCH_OF_WATER');
+
+  double get GSL_CONST_CGSM_INCH_OF_WATER =>
+      _GSL_CONST_CGSM_INCH_OF_WATER.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_PSI =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_PSI');
+
+  double get GSL_CONST_CGSM_PSI => _GSL_CONST_CGSM_PSI.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_POISE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_POISE');
+
+  double get GSL_CONST_CGSM_POISE => _GSL_CONST_CGSM_POISE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_STOKES =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_STOKES');
+
+  double get GSL_CONST_CGSM_STOKES => _GSL_CONST_CGSM_STOKES.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_STILB =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_STILB');
+
+  double get GSL_CONST_CGSM_STILB => _GSL_CONST_CGSM_STILB.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_LUMEN =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_LUMEN');
+
+  double get GSL_CONST_CGSM_LUMEN => _GSL_CONST_CGSM_LUMEN.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_LUX =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_LUX');
+
+  double get GSL_CONST_CGSM_LUX => _GSL_CONST_CGSM_LUX.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_PHOT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_PHOT');
+
+  double get GSL_CONST_CGSM_PHOT => _GSL_CONST_CGSM_PHOT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_FOOTCANDLE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_FOOTCANDLE');
+
+  double get GSL_CONST_CGSM_FOOTCANDLE => _GSL_CONST_CGSM_FOOTCANDLE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_LAMBERT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_LAMBERT');
+
+  double get GSL_CONST_CGSM_LAMBERT => _GSL_CONST_CGSM_LAMBERT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_FOOTLAMBERT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_FOOTLAMBERT');
+
+  double get GSL_CONST_CGSM_FOOTLAMBERT => _GSL_CONST_CGSM_FOOTLAMBERT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_CURIE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_CURIE');
+
+  double get GSL_CONST_CGSM_CURIE => _GSL_CONST_CGSM_CURIE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_ROENTGEN =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_ROENTGEN');
+
+  double get GSL_CONST_CGSM_ROENTGEN => _GSL_CONST_CGSM_ROENTGEN.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_RAD =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_RAD');
+
+  double get GSL_CONST_CGSM_RAD => _GSL_CONST_CGSM_RAD.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_SOLAR_MASS =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_SOLAR_MASS');
+
+  double get GSL_CONST_CGSM_SOLAR_MASS => _GSL_CONST_CGSM_SOLAR_MASS.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_BOHR_RADIUS =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_BOHR_RADIUS');
+
+  double get GSL_CONST_CGSM_BOHR_RADIUS => _GSL_CONST_CGSM_BOHR_RADIUS.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_NEWTON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_NEWTON');
+
+  double get GSL_CONST_CGSM_NEWTON => _GSL_CONST_CGSM_NEWTON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_DYNE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_DYNE');
+
+  double get GSL_CONST_CGSM_DYNE => _GSL_CONST_CGSM_DYNE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_JOULE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_JOULE');
+
+  double get GSL_CONST_CGSM_JOULE => _GSL_CONST_CGSM_JOULE.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_ERG =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_ERG');
+
+  double get GSL_CONST_CGSM_ERG => _GSL_CONST_CGSM_ERG.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_BOHR_MAGNETON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_BOHR_MAGNETON');
+
+  double get GSL_CONST_CGSM_BOHR_MAGNETON =>
+      _GSL_CONST_CGSM_BOHR_MAGNETON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_NUCLEAR_MAGNETON =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_NUCLEAR_MAGNETON');
+
+  double get GSL_CONST_CGSM_NUCLEAR_MAGNETON =>
+      _GSL_CONST_CGSM_NUCLEAR_MAGNETON.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_ELECTRON_MAGNETIC_MOMENT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_ELECTRON_MAGNETIC_MOMENT');
+
+  double get GSL_CONST_CGSM_ELECTRON_MAGNETIC_MOMENT =>
+      _GSL_CONST_CGSM_ELECTRON_MAGNETIC_MOMENT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_PROTON_MAGNETIC_MOMENT =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_PROTON_MAGNETIC_MOMENT');
+
+  double get GSL_CONST_CGSM_PROTON_MAGNETIC_MOMENT =>
+      _GSL_CONST_CGSM_PROTON_MAGNETIC_MOMENT.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_FARADAY =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_FARADAY');
+
+  double get GSL_CONST_CGSM_FARADAY => _GSL_CONST_CGSM_FARADAY.value;
+
+  late final ffi.Pointer<ffi.Double> _GSL_CONST_CGSM_ELECTRON_CHARGE =
+      _lookup<ffi.Double>('GSL_CONST_CGSM_ELECTRON_CHARGE');
+
+  double get GSL_CONST_CGSM_ELECTRON_CHARGE =>
+      _GSL_CONST_CGSM_ELECTRON_CHARGE.value;
 
   late final ffi.Pointer<ffi.Double> _M_E = _lookup<ffi.Double>('M_E');
 
