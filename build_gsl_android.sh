@@ -4,10 +4,10 @@
 set -e
 
 # Set up variables
-GSL_VERSION="2.7"  # Update this to the version you want to use
+GSL_VERSION="2.8"  # Update this to the version you want to use
 ANDROID_NDK="/home/darth-kartikey/Android/Sdk/ndk/28.0.12674087"  # Update this to your NDK path
 BUILD_DIR="$(pwd)/gsl_build"
-INSTALL_DIR="$(pwd)/gsl"
+INSTALL_DIR="$(pwd)/gsl/android"
 GSL_SOURCE_DIR="$BUILD_DIR/gsl-$GSL_VERSION"
 
 # Download and extract GSL if not already present
@@ -49,7 +49,8 @@ build_arch() {
 }
 
 # Build for each architecture
-build_arch "aarch64" "arm64-v8a"
-build_arch "armv7a" "armeabi-v7a"
+#build_arch "aarch64" "arm64-v8a"
+#build_arch "armv7a" "armeabi-v7a"
+build_arch "x86_64" "x86_64"
 
 echo "GSL built successfully for all architectures"

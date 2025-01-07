@@ -17,8 +17,8 @@ message(STATUS "CMAKE_SYSTEM_PROCESSOR: ${CMAKE_SYSTEM_PROCESSOR}")
 
 # Specify the paths to the locally installed GSL library and include directories for each platform
 if (ANDROID)
-    set(GSL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/../gsl/${ANDROID_ABI}/include)
-    set(GSL_LIBRARIES ${CMAKE_SOURCE_DIR}/../gsl/${ANDROID_ABI}/lib/libgsl.so ${CMAKE_SOURCE_DIR}/../gsl/${ANDROID_ABI}/lib/libgslcblas.so)
+    set(GSL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/../gsl/android/${ANDROID_ABI}/include)
+    set(GSL_LIBRARIES ${CMAKE_SOURCE_DIR}/../gsl/android/${ANDROID_ABI}/lib/libgsl.so ${CMAKE_SOURCE_DIR}/../gsl/android/${ANDROID_ABI}/lib/libgslcblas.so)
 elseif (WIN32)
     set(GSL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/../gsl/x86_64/include)
     set(GSL_LIBRARIES ${CMAKE_SOURCE_DIR}/../gsl/x86_64/lib/libgsl.so ${CMAKE_SOURCE_DIR}/../gsl/x86_64/lib/libgslcblas.so)

@@ -25,7 +25,6 @@ headers:
     - "src/flutter_gsl.h"
   include-directives:
     - 'src/flutter_gsl.h'
-    - 'src/gsl_const.h'
 llvm-path:
   - "/snap/flutter/145/usr/lib/llvm-10/lib"  # Update this path to your LLVM installation path
 compiler-opts:
