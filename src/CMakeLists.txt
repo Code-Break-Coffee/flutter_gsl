@@ -20,8 +20,8 @@ if (ANDROID)
     set(GSL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/../gsl/android/${ANDROID_ABI}/include)
     set(GSL_LIBRARIES ${CMAKE_SOURCE_DIR}/../gsl/android/${ANDROID_ABI}/lib/libgsl.so ${CMAKE_SOURCE_DIR}/../gsl/android/${ANDROID_ABI}/lib/libgslcblas.so)
 elseif (WIN32)
-    set(GSL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/../gsl/x86_64/include)
-    set(GSL_LIBRARIES ${CMAKE_SOURCE_DIR}/../gsl/x86_64/lib/libgsl.so ${CMAKE_SOURCE_DIR}/../gsl/x86_64/lib/libgslcblas.so)
+    set(GSL_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../gsl/x86_64/include)
+    set(GSL_LIBRARIES ${CMAKE_CURRENT_SOURCE_DIR}/../gsl/x86_64/lib/libgsl.so ${CMAKE_CURRENT_SOURCE_DIR}/../gsl/x86_64/lib/libgslcblas.so)
 elseif (UNIX)
     set(GSL_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../gsl/x86_64/include)
     set(GSL_LIBRARIES ${CMAKE_CURRENT_SOURCE_DIR}/../gsl/x86_64/lib/libgsl.so ${CMAKE_CURRENT_SOURCE_DIR}/../gsl/x86_64/lib/libgslcblas.so)
@@ -33,7 +33,7 @@ message(STATUS "GSL_LIBRARIES: ${GSL_LIBRARIES}")
 
 # Check if the GSL include directory exists
 if(NOT EXISTS ${GSL_INCLUDE_DIR})
-    message(FATAL_ERROR "GSL include directory not found: ${GSL_INCLUDE_DIR}")
+    message(FATAL_ERROR "GSL include directory not found: ${GSL_INCLUDE_DIR} CMAKE_SOURCE_DIR: ${CMAKE_SOURCE_DIR} ; ${CMAKE_CURRENT_SOURCE_DIR}")
 endif()
 
 # Check if the GSL libraries exist
