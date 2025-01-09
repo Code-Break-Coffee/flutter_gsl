@@ -20,8 +20,8 @@
 #ifndef __GSL_FIT_H__
 #define __GSL_FIT_H__
 
-#include <stdlib.h>
-#include <gsl/gsl_math.h>
+#include "stdlib.h"
+#include "gsl_math.h"
 
 #undef __BEGIN_DECLS
 #undef __END_DECLS

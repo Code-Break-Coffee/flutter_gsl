@@ -23,9 +23,9 @@
 #ifndef __GSL_SF_LEGENDRE_H__
 #define __GSL_SF_LEGENDRE_H__
 
-#include <stdlib.h>
-#include <gsl/gsl_inline.h>
-#include <gsl/gsl_sf_result.h>
+#include "stdlib.h"
+#include "gsl_inline.h"
+#include "gsl_sf_result.h"
 
 #undef __BEGIN_DECLS
 #undef __END_DECLS

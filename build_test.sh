@@ -7,7 +7,7 @@ set -e
 GSL_VERSION="2.8"  # Update this to your desired version
 ANDROID_NDK="/home/darth-kartikey/Android/Sdk/ndk/28.0.12674087"  # Update to your actual NDK path
 BUILD_DIR="$(pwd)/gsl_build"
-INSTALL_DIR="$(pwd)/gsl"
+INSTALL_DIR="$(pwd)/gsl/android"
 GSL_SOURCE_DIR="$BUILD_DIR/gsl-$GSL_VERSION"
 
 # Define Android architectures

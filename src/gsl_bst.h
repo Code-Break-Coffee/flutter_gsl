@@ -20,11 +20,11 @@
 #ifndef __GSL_BST_H__
 #define __GSL_BST_H__
 
-#include <stdlib.h>
-#include <gsl/gsl_math.h>
-#include <gsl/gsl_bst_avl.h>
-#include <gsl/gsl_bst_rb.h>
-#include <gsl/gsl_bst_types.h>
+#include "stdlib.h"
+#include "gsl_math.h"
+#include "gsl_bst_avl.h"
+#include "gsl_bst_rb.h"
+#include "gsl_bst_types.h"
 
 #undef __BEGIN_DECLS
 #undef __END_DECLS
