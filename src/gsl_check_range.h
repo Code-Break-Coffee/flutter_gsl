@@ -20,8 +20,8 @@
 #ifndef __GSL_CHECK_RANGE_H__
 #define __GSL_CHECK_RANGE_H__
 
-#include <stdlib.h>
-#include <gsl/gsl_types.h>
+#include "stdlib.h"
+#include "gsl_types.h"
 
 #undef __BEGIN_DECLS
 #undef __END_DECLS

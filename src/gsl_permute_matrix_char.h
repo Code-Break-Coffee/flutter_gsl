@@ -20,10 +20,10 @@
 #ifndef __GSL_PERMUTE_MATRIX_CHAR_H__
 #define __GSL_PERMUTE_MATRIX_CHAR_H__
 
-#include <stdlib.h>
-#include <gsl/gsl_errno.h>
-#include <gsl/gsl_permutation.h>
-#include <gsl/gsl_matrix_char.h>
+#include "stdlib.h"
+#include "gsl_errno.h"
+#include "gsl_permutation.h"
+#include "gsl_matrix_char.h"
 
 #undef __BEGIN_DECLS
 #undef __END_DECLS

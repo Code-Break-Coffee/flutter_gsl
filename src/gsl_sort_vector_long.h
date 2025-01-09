@@ -20,10 +20,10 @@
 #ifndef __GSL_SORT_VECTOR_LONG_H__
 #define __GSL_SORT_VECTOR_LONG_H__
 
-#include <stdlib.h>
-#include <gsl/gsl_errno.h>
-#include <gsl/gsl_permutation.h>
-#include <gsl/gsl_vector_long.h>
+#include "stdlib.h"
+#include "gsl_errno.h"
+#include "gsl_permutation.h"
+#include "gsl_vector_long.h"
 
 #undef __BEGIN_DECLS
 #undef __END_DECLS

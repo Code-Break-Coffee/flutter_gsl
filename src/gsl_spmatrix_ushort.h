@@ -20,11 +20,11 @@
 #ifndef __GSL_SPMATRIX_USHORT_H__
 #define __GSL_SPMATRIX_USHORT_H__
 
-#include <stdlib.h>
-#include <gsl/gsl_math.h>
-#include <gsl/gsl_bst.h>
-#include <gsl/gsl_vector_ushort.h>
-#include <gsl/gsl_matrix_ushort.h>
+#include "stdlib.h"
+#include "gsl_math.h"
+#include "gsl_bst.h"
+#include "gsl_vector_ushort.h"
+#include "gsl_matrix_ushort.h"
 
 #undef __BEGIN_DECLS
 #undef __END_DECLS

@@ -2,7 +2,7 @@
 #define GSL_SPECIAL_FUNC_H
 
 // Include necessary GSL headers
-#include <gsl/gsl_sf_bessel.h>
+#include "gsl_sf_bessel.h"
 
 // Function declarations following the new convention
 double sf_bessel_J0(double x);

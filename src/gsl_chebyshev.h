@@ -20,9 +20,9 @@
 #ifndef __GSL_CHEBYSHEV_H__
 #define __GSL_CHEBYSHEV_H__
 
-#include <stdlib.h>
-#include <gsl/gsl_math.h>
-#include <gsl/gsl_mode.h>
+#include "stdlib.h"
+#include "gsl_math.h"
+#include "gsl_mode.h"
 
 #undef __BEGIN_DECLS
 #undef __END_DECLS

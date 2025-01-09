@@ -20,8 +20,8 @@
 #ifndef __GSL_HISTOGRAM2D_H__
 #define __GSL_HISTOGRAM2D_H__
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "stdlib.h"
+#include "stdio.h"
 
 #undef __BEGIN_DECLS
 #undef __END_DECLS

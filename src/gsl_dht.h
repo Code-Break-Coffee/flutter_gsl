@@ -22,7 +22,7 @@
 #ifndef __GSL_DHT_H__
 #define __GSL_DHT_H__
 
-#include <stdlib.h>
+#include "stdlib.h"
 
 #undef __BEGIN_DECLS
 #undef __END_DECLS

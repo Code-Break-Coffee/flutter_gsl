@@ -23,9 +23,9 @@
 #ifndef __GSL_MONTE_VEGAS_H__
 #define __GSL_MONTE_VEGAS_H__
 
-#include <stdlib.h>
-#include <gsl/gsl_rng.h>
-#include <gsl/gsl_monte.h>
+#include "stdlib.h"
+#include "gsl_rng.h"
+#include "gsl_monte.h"
 
 #undef __BEGIN_DECLS
 #undef __END_DECLS

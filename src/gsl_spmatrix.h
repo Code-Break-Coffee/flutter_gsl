@@ -35,28 +35,29 @@ typedef struct gsl_spmatrix_pool_node gsl_spmatrix_pool;
 /* compare matrix entries (ia,ja) and (ib,jb) - sort by rows first, then by columns */
 #define GSL_SPMATRIX_COMPARE_ROWCOL(m,ia,ja,ib,jb)   ((ia) < (ib) ? -1 : ((ia) > (ib) ? 1 : ((ja) < (jb) ? -1 : ((ja) > (jb)))))
 
+#include "stdlib.h"
 /* common/utility functions */
 
 void gsl_spmatrix_cumsum(const size_t n, int * c);
 
-#include <gsl/gsl_spmatrix_complex_long_double.h>
-#include <gsl/gsl_spmatrix_complex_double.h>
-#include <gsl/gsl_spmatrix_complex_float.h>
+#include "gsl_spmatrix_complex_long_double.h"
+#include "gsl_spmatrix_complex_double.h"
+#include "gsl_spmatrix_complex_float.h"
 
-#include <gsl/gsl_spmatrix_long_double.h>
-#include <gsl/gsl_spmatrix_double.h>
-#include <gsl/gsl_spmatrix_float.h>
+#include "gsl_spmatrix_long_double.h"
+#include "gsl_spmatrix_double.h"
+#include "gsl_spmatrix_float.h"
 
-#include <gsl/gsl_spmatrix_ulong.h>
-#include <gsl/gsl_spmatrix_long.h>
+#include "gsl_spmatrix_ulong.h"
+#include "gsl_spmatrix_long.h"
 
-#include <gsl/gsl_spmatrix_uint.h>
-#include <gsl/gsl_spmatrix_int.h>
+#include "gsl_spmatrix_uint.h"
+#include "gsl_spmatrix_int.h"
 
-#include <gsl/gsl_spmatrix_ushort.h>
-#include <gsl/gsl_spmatrix_short.h>
+#include "gsl_spmatrix_ushort.h"
+#include "gsl_spmatrix_short.h"
 
-#include <gsl/gsl_spmatrix_uchar.h>
-#include <gsl/gsl_spmatrix_char.h>
+#include "gsl_spmatrix_uchar.h"
+#include "gsl_spmatrix_char.h"
 
 #endif /* __GSL_SPMATRIX_H__ */

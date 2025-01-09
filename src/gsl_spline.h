@@ -19,8 +19,8 @@
 
 #ifndef __GSL_SPLINE_H__
 #define __GSL_SPLINE_H__
-#include <stdlib.h>
-#include <gsl/gsl_interp.h>
+#include "stdlib.h"
+#include "gsl_interp.h"
 
 #undef __BEGIN_DECLS
 #undef __END_DECLS

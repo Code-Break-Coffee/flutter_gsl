@@ -20,9 +20,9 @@
 #ifndef __GSL_POLY_H__
 #define __GSL_POLY_H__
 
-#include <stdlib.h>
-#include <gsl/gsl_inline.h>
-#include <gsl/gsl_complex.h>
+#include "stdlib.h"
+#include "gsl_inline.h"
+#include "gsl_complex.h"
 
 #undef __BEGIN_DECLS
 #undef __END_DECLS

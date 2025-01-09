@@ -68,7 +68,7 @@ typedef const float *        gsl_const_complex_packed_float_ptr  ;
 typedef const long double *  gsl_const_complex_packed_long_double_ptr ;
 
 /*
- * If <complex.h> is included, use the C99 complex type.  Otherwise
+ * If <complex.h" is included, use the C99 complex type.  Otherwise
  * define a type bit-compatible with C99 complex. The GSL_REAL and GSL_IMAG
  * macros require C11 functionality also (_Generic)
  */

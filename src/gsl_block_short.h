@@ -20,8 +20,8 @@
 #ifndef __GSL_BLOCK_SHORT_H__
 #define __GSL_BLOCK_SHORT_H__
 
-#include <stdlib.h>
-#include <gsl/gsl_errno.h>
+#include "stdlib.h"
+#include "gsl_errno.h"
 
 #undef __BEGIN_DECLS
 #undef __END_DECLS
