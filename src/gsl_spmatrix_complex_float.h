@@ -62,6 +62,9 @@ __BEGIN_DECLS
  * [ data[p[i]], data[p[i] + 1], ..., data[p[i+1] - 1] ]
  */
 
+
+typedef struct gsl_spmatrix_pool_node gsl_spmatrix_pool;
+
 typedef struct
 {
   size_t size1;              /* number of rows */
