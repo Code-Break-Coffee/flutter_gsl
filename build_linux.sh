@@ -6,7 +6,7 @@ set -e
 # Define variables
 GSL_VERSION="2.8"  # Update this to your desired version
 BUILD_DIR="$(pwd)/gsl_build"
-INSTALL_DIR="$(pwd)/gsl"
+INSTALL_DIR="$(pwd)/gsl/linux"
 GSL_SOURCE_DIR="$BUILD_DIR/gsl-$GSL_VERSION"
 
 # Download and extract GSL if not already present
@@ -19,7 +19,7 @@ if [ ! -d "$GSL_SOURCE_DIR" ]; then
 fi
 
 # Clean previous builds
-#rm -rf "$INSTALL_DIR"
+rm -rf "$INSTALL_DIR"
 
 # Function to build for x86_64 architecture
 build_x86_64() {
