@@ -19,7 +19,7 @@ struct gsl_spmatrix_pool_node
   unsigned char * free_slot; /* pointer to next available slot */
 };
 
-typedef struct gsl_spmatrix_pool_node gsl_spmatrix_pool;
+//typedef struct gsl_spmatrix_pool_node gsl_spmatrix_pool;
 
 #define GSL_SPMATRIX_ISCOO(m)         ((m)->sptype == GSL_SPMATRIX_COO)
 #define GSL_SPMATRIX_ISCSC(m)         ((m)->sptype == GSL_SPMATRIX_CSC)
